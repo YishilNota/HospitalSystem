@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserTableController">
+   <children>
+      <TableView fx:id="user_table" layoutX="3.0" layoutY="74.0" prefHeight="318.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="user_RName" prefWidth="91.20001220703125" text="姓名" />
+          <TableColumn fx:id="user_sex" prefWidth="52.79998779296875" text="性别" />
+            <TableColumn fx:id="user_age" prefWidth="53.60003662109375" text="年龄" />
+            <TableColumn fx:id="user_IDCARD" prefWidth="208.0" text="身份证号码" />
+            <TableColumn fx:id="user_UName" prefWidth="104.00006103515625" text="用户名" />
+            <TableColumn fx:id="user_passwd" prefWidth="86.39996337890625" text="密码" />
+        </columns>
+      </TableView>
+      <Label layoutX="219.0" layoutY="18.0" prefHeight="42.0" prefWidth="159.0" text="病人用户信息" textFill="#0ab1a0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="close_btn" layoutX="522.0" layoutY="27.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: #A586C9FF;" text="退出" textFill="WHITE" />
+   </children>
+</AnchorPane>

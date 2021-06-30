@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;source/5.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <Label layoutX="148.0" layoutY="48.0" prefHeight="24.0" prefWidth="58.0" text="用户名" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="135.0" prefHeight="24.0" prefWidth="58.0" text="姓   名" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="88.0" prefHeight="24.0" prefWidth="58.0" text="密   码" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="176.0" prefHeight="24.0" prefWidth="58.0" text="年   龄" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="216.0" prefHeight="24.0" prefWidth="58.0" text="性   别" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="265.0" prefHeight="24.0" prefWidth="92.0" text="身份证号码" textFill="#040cff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserNameField" layoutX="207.0" layoutY="48.0" prefHeight="24.0" prefWidth="202.0" />
+      <TextField fx:id="PassWordField" layoutX="207.0" layoutY="88.0" prefHeight="24.0" prefWidth="202.0" />
+      <TextField fx:id="RealNameField" layoutX="207.0" layoutY="135.0" prefHeight="24.0" prefWidth="202.0" />
+      <TextField fx:id="AgeField" layoutX="207.0" layoutY="176.0" prefHeight="24.0" prefWidth="202.0" />
+      <TextField fx:id="SexField" layoutX="207.0" layoutY="216.0" prefHeight="24.0" prefWidth="202.0" />
+      <TextField fx:id="IDCARDField" layoutX="207.0" layoutY="265.0" prefHeight="24.0" prefWidth="202.0" />
+      <Button fx:id="add_user_btn" layoutX="473.0" layoutY="43.0" mnemonicParsing="false" onAction="#add_user_by_admin" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #A586C9FF;" text="确认添加" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="close_btn" layoutX="473.0" layoutY="351.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: E55597FF;" text="关闭" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-image: url(&quot;source/5.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DoctorController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="19.0" prefHeight="516.0" prefWidth="512.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="门诊病人">
+               <content>
+                  <TableView fx:id="opc_top" prefHeight="456.0" prefWidth="475.0">
+                    <columns>
+                      <TableColumn fx:id="opc_id" prefWidth="36.0" text="序号" />
+                      <TableColumn fx:id="opc_username" prefWidth="90.39999389648438" text="病人名称" />
+                        <TableColumn fx:id="opc_text" prefWidth="372.8000061035156" text="诊断结果" />
+                    </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab text="以往病人">
+               <content>
+                  <TableView fx:id="opced_top" prefHeight="442.0" prefWidth="507.0">
+                    <columns>
+                      <TableColumn fx:id="opced_id" prefWidth="36.0" text="序号" />
+                      <TableColumn fx:id="opced_username" prefWidth="88.80001831054688" text="病人名称" />
+                        <TableColumn fx:id="opced_text" prefWidth="373.59999389648436" text="诊断结果" />
+                    </columns>
+                  </TableView>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="logout_btn" layoutX="895.0" layoutY="553.0" mnemonicParsing="false" onAction="#logout_to_login" prefHeight="23.0" prefWidth="90.0" style="-fx-background-color: E55597FF;" text="退出登录" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_text_btn" layoutX="576.0" layoutY="332.0" mnemonicParsing="false" onAction="#add_text_to_opc_text" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #A586C9FF;" text="添加诊断记录" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_opced_btn" layoutX="576.0" layoutY="421.0" mnemonicParsing="false" onAction="#add_opced" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #A586C9FF;" text="病人已诊断" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="out_work_btn" layoutX="912.0" layoutY="38.0" mnemonicParsing="false" onAction="#change_isWorking_Out" prefHeight="22.0" prefWidth="64.0" style="-fx-background-color: E55597FF;" text="休息" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="text_area" layoutX="537.0" layoutY="163.0" onMouseClicked="#ready_for_input_text" prefHeight="162.0" prefWidth="452.0" text="请输入诊断结果：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="opced_id_field" layoutX="830.0" layoutY="426.0" prefHeight="34.0" prefWidth="81.0" />
+      <Label layoutX="792.0" layoutY="428.0" prefHeight="30.0" prefWidth="38.0" text="序号" textFill="#08acd9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="replay_btn" layoutX="14.0" layoutY="551.0" mnemonicParsing="false" onAction="#replay" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #A586C9FF;" text="刷新诊断表" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="opc_id_field" layoutX="830.0" layoutY="337.0" prefHeight="34.0" prefWidth="81.0" />
+      <Label layoutX="792.0" layoutY="339.0" prefHeight="30.0" prefWidth="38.0" text="序号" textFill="#1194cc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="128.0" prefHeight="30.0" prefWidth="55.0" text="诊断" textFill="#ff0101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear_btn" layoutX="895.0" layoutY="128.0" mnemonicParsing="false" onAction="#clear_text" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: PINK;" text="清空" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="reopc_btn" layoutX="287.0" layoutY="551.0" mnemonicParsing="false" onAction="#reopc_to_opc" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #A586C9FF;" text="病人重新诊断" textFill="WHITE" />
+      <Label layoutX="405.0" layoutY="553.0" prefHeight="30.0" prefWidth="38.0" text="序号" textFill="#08acd9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reopc_id_field" layoutX="444.0" layoutY="550.0" prefHeight="34.0" prefWidth="81.0" />
+      <Button fx:id="on_work_btn" layoutX="830.0" layoutY="38.0" mnemonicParsing="false" onAction="#change_isWorking_On" prefHeight="21.0" prefWidth="64.0" style="-fx-background-color: E55597FF;" text="开始诊断" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="doctor_name_label" layoutX="537.0" layoutY="31.0" prefHeight="30.0" prefWidth="55.0" text="医师" textFill="#ff0101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="isWorking_field" layoutX="710.0" layoutY="34.0" prefHeight="30.0" prefWidth="64.0" />
+      <Label layoutX="611.0" layoutY="32.0" prefHeight="34.0" prefWidth="64.0" text="工作状态">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

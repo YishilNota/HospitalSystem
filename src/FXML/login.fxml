@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;source/5.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <Button fx:id="login_btn" layoutX="334.0" layoutY="363.0" mnemonicParsing="false" onAction="#user_login" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #1063d4;" text="登录" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="220.0" layoutY="122.0" prefHeight="35.0" prefWidth="61.0" text="用户名">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="183.0" prefHeight="35.0" prefWidth="62.0" text="密   码">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username_field" layoutX="326.0" layoutY="122.0" prefHeight="35.0" prefWidth="223.0" />
+      <TextField fx:id="pswd_field" layoutX="326.0" layoutY="183.0" prefHeight="35.0" prefWidth="223.0" />
+      <Button fx:id="close_btn" layoutX="682.0" layoutY="556.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: E55597FF;" text="关闭系统" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <RadioButton fx:id="doctor_rb" layoutX="409.0" layoutY="265.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="80.0" text="医生" textFill="#0f26ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="user_type" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="user_rb" layoutX="326.0" layoutY="265.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="80.0" selected="true" text="病人" textFill="#0f26ff" toggleGroup="$user_type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="admin_rb" layoutX="507.0" layoutY="265.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" text="管理员" textFill="#0f26ff" toggleGroup="$user_type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

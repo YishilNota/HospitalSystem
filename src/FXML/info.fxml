@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.11557788944723618" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.infoPanel">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: LIGHTSKYBLUE;">
+         <children>
+            <Button fx:id="close_btn" layoutX="524.0" layoutY="8.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: #A586C9FF;" text="退出" textFill="WHITE" />
+            <Label layoutX="270.0" layoutY="2.0" text="通知" textFill="#1c677a">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: LIGHTSKYBLUE;">
+         <children>
+            <TextArea fx:id="inform_area" layoutX="16.0" layoutY="233.0" prefHeight="102.0" prefWidth="568.0" text="暂无通知" />
+            <Label layoutX="16.0" layoutY="194.0" prefHeight="38.0" prefWidth="51.0" text="通知" textFill="#ff01bf">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TableView fx:id="info_top" layoutX="16.0" layoutY="14.0" prefHeight="169.0" prefWidth="568.0">
+              <columns>
+                  <TableColumn fx:id="info_time" maxWidth="453.60003662109375" minWidth="0.0" prefWidth="181.60003662109375" text="时间" />
+                <TableColumn fx:id="info_text" minWidth="0.0" prefWidth="388.0" text="用户消息" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

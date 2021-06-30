@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.11557788944723618" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChiefPanel">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: LIGHTSKYBLUE;">
+         <children>
+            <Button fx:id="close_btn" layoutX="524.0" layoutY="8.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: #A586C9FF;" text="退出" textFill="WHITE" />
+            <Label layoutX="212.0" layoutY="2.0" prefHeight="38.0" prefWidth="176.0" text="医师信息列表" textFill="#1c677a">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="599.0" style="-fx-background-color: LIGHTSKYBLUE;">
+         <children>
+            <TabPane prefHeight="350.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="     骨科     ">
+                     <content>
+                        <TableView fx:id="a_top" prefHeight="190.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="a_ID" prefWidth="86.39999388456344" text="医号" />
+                            <TableColumn fx:id="a_RealName" prefWidth="177.59994506835938" text="专家/主任名称" />
+                              <TableColumn fx:id="a_WorkTime" prefWidth="192.0" text="工作时间" />
+                              <TableColumn fx:id="a_Other" prefWidth="145.5999755859375" text="备注" />
+                          </columns>
+                        </TableView>
+                     </content></Tab>
+                  <Tab text="     儿科     ">
+                     <content>
+                        <TableView fx:id="b_top" prefHeight="200.0" prefWidth="200.0">
+                           <columns>
+                              <TableColumn fx:id="b_ID" prefWidth="86.39999388456344" text="医号" />
+                              <TableColumn fx:id="b_RealName" prefWidth="177.59994506835938" text="专家/医生名称" />
+                              <TableColumn fx:id="b_WorkTime" prefWidth="192.0" text="工作时间" />
+                              <TableColumn fx:id="b_Other" prefWidth="145.5999755859375" text="备注" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+                  <Tab text="     内科     ">
+                     <content>
+                        <TableView fx:id="c_top" prefHeight="200.0" prefWidth="200.0">
+                           <columns>
+                              <TableColumn fx:id="c_ID" prefWidth="86.39999388456344" text="医号" />
+                              <TableColumn fx:id="c_RealName" prefWidth="177.59994506835938" text="专家/主任名称" />
+                              <TableColumn fx:id="c_WorkTime" prefWidth="192.0" text="工作时间" />
+                              <TableColumn fx:id="c_Other" prefWidth="145.5999755859375" text="备注" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+                  <Tab text="     外科     ">
+                     <content>
+                        <TableView fx:id="d_top" prefHeight="200.0" prefWidth="200.0">
+                           <columns>
+                              <TableColumn fx:id="d_ID" prefWidth="86.39999388456344" text="医号" />
+                              <TableColumn fx:id="d_RealName" prefWidth="177.59994506835938" text="专家/主任名称" />
+                              <TableColumn fx:id="d_WorkTime" prefWidth="192.0" text="工作时间" />
+                              <TableColumn fx:id="d_Other" prefWidth="145.5999755859375" text="备注" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+                  <Tab text="     其他科室     ">
+                     <content>
+                        <TableView fx:id="e_top" prefHeight="200.0" prefWidth="200.0">
+                           <columns>
+                              <TableColumn fx:id="e_ID" prefWidth="86.39999388456344" text="医号" />
+                              <TableColumn fx:id="e_RealName" prefWidth="177.59994506835938" text="专家/主任名称" />
+                              <TableColumn fx:id="e_WorkTime" prefWidth="192.0" text="工作时间" />
+                              <TableColumn fx:id="e_Other" prefWidth="145.5999755859375" text="备注" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;source/5.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserController">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="43.0" layoutX="25.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../source/user.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="close_btn" layoutX="677.0" layoutY="529.0" mnemonicParsing="false" onAction="#back_to_home" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: E55597FF;" text="关闭系统" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout_btn" layoutX="563.0" layoutY="529.0" mnemonicParsing="false" onAction="#logout_to_login" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: E55597FF;" text="退出登录" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="name_label" layoutX="563.0" layoutY="85.0" prefHeight="40.0" prefWidth="174.0" text="用户名：">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sex_label" layoutX="341.0" layoutY="29.0" prefHeight="40.0" prefWidth="134.0" text="性别：">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="IDCARD_label" layoutX="112.0" layoutY="85.0" prefHeight="40.0" prefWidth="510.0" text="身份证号码：">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="opc_btn" layoutX="111.0" layoutY="265.0" mnemonicParsing="false" onAction="#add_now_opc" prefHeight="50.0" prefWidth="174.0" style="-fx-background-color: #A586C9FF;" text="挂号" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="opcInfo_btn" layoutX="447.0" layoutY="265.0" mnemonicParsing="false" onAction="#open_opcInfo_panel" prefHeight="50.0" prefWidth="174.0" style="-fx-background-color: #A586C9FF;" text="病历" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="clief_btn" layoutX="149.0" layoutY="529.0" mnemonicParsing="false" onAction="#clief_info_display" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #A586C9FF;" text="专家信息" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="info_btn" layoutX="423.0" layoutY="529.0" mnemonicParsing="false" onAction="#oepn_info_panel" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #A586C9FF;" text="通知" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="hospital_btn" layoutX="25.0" layoutY="529.0" mnemonicParsing="false" onAction="#hospital_info_display" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #A586C9FF;" text="医院信息" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="opc_price_btn" layoutX="286.0" layoutY="529.0" mnemonicParsing="false" onAction="#opc_price_panel" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #A586C9FF;" text="收费标准" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="age_label" layoutX="563.0" layoutY="29.0" prefHeight="40.0" prefWidth="133.0" text="年龄：">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="realname_label" layoutX="112.0" layoutY="29.0" prefHeight="40.0" prefWidth="174.0" text="姓名：">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="money_btn" layoutX="112.0" layoutY="349.0" mnemonicParsing="false" onAction="#open_add_money_panel" prefHeight="50.0" prefWidth="174.0" style="-fx-background-color: #A586C9FF;" text="充值" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="money_check1" layoutX="447.0" layoutY="349.0" mnemonicParsing="false" onAction="#money_check_by_user" prefHeight="50.0" prefWidth="174.0" style="-fx-background-color: #A586C9FF;" text="查询余额" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
